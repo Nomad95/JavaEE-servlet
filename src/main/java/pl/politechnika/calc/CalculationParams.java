@@ -1,4 +1,4 @@
-package pl.politechnika;
+package pl.politechnika.calc;
 
 public class CalculationParams {
     private double leftParameter;

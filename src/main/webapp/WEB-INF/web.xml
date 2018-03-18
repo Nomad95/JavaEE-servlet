@@ -10,8 +10,25 @@
   </servlet>
   <servlet>
     <servlet-name>CalcServlet</servlet-name>
-    <servlet-class>pl.politechnika.CalcServlet</servlet-class>
+    <servlet-class>pl.politechnika.calc.CalcServlet</servlet-class>
   </servlet>
+  <servlet>
+    <servlet-name>PollServlet</servlet-name>
+    <servlet-class>pl.politechnika.poll.PollServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>PollExcelServlet</servlet-name>
+    <servlet-class>pl.politechnika.poll.excel.PollExcelServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>PollChartServlet</servlet-name>
+    <servlet-class>pl.politechnika.poll.chart.PollChartServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>RedirectServlet</servlet-name>
+    <servlet-class>pl.politechnika.RedirectServlet</servlet-class>
+  </servlet>
+
   <servlet-mapping>
     <servlet-name>CalcServlet</servlet-name>
     <url-pattern>/calc</url-pattern>
@@ -20,4 +37,21 @@
     <servlet-name>ServletDemo</servlet-name>
     <url-pattern>/</url-pattern>
   </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>PollServlet</servlet-name>
+    <url-pattern>/poll</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>PollExcelServlet</servlet-name>
+    <url-pattern>/poll/excel</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>PollChartServlet</servlet-name>
+    <url-pattern>/poll/chart</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>RedirectServlet</servlet-name>
+    <url-pattern>/redirect</url-pattern>
+  </servlet-mapping>
+
 </web-app>

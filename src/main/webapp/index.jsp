@@ -14,6 +14,8 @@ and open the template in the editor.
 </head>
 <body>
 <a href="calc/calc.jsp"><button class="btn btn-default" role="button">Kalkulator</button></a>
+<a href="poll/poll.jsp"><button class="btn btn-default" role="button">Sonda</button></a>
+
 
 <script src="bootstrap/jquery-3.3.1.min.js"></script>
 <script>window.jQuery || document.write('<script src="bootstrap/jquery-3.3.1.min.js"><\/script>')</script>
