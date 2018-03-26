@@ -9,10 +9,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.util.Arrays;
-import java.util.List;
-import java.util.Map;
-import java.util.Optional;
+import java.util.*;
 
 
 public class PollServlet extends HttpServlet {
@@ -46,7 +43,7 @@ public class PollServlet extends HttpServlet {
     }
 
     private Optional<Cookie> getPollCookie(HttpServletRequest request) {
-        List<Cookie> cookies = Arrays.asList(request.getCookies());
+        List<Cookie> cookies = request.getCookies() != null ? Arrays.asList(request.getCookies()) : new ArrayList<Cookie>();
         return cookies.stream().filter(cookie -> HAS_VOTED_IN_POLL_COOKIE_NAME.equals(cookie.getName())).findFirst();
     }
 
