@@ -1,3 +1,4 @@
+<%@ page import="pl.config.jdbc.JDBCConnection" %>
 <%@ page import="java.time.LocalDate" %>
 <%@ page import="java.util.*" %>
 <!DOCTYPE html>
@@ -43,6 +44,8 @@ and open the template in the editor.
         response.addCookie(cookie);
 
     }
+
+    JDBCConnection.testConnection();
 %>
 <%
     HttpSession userSession = request.getSession(true);
@@ -62,6 +65,7 @@ and open the template in the editor.
 
 <a href="calc/calc.jsp"><button class="btn btn-default" role="button">Kalkulator</button></a>
 <a href="poll/poll.jsp"><button class="btn btn-default" role="button">Sonda</button></a>
+<a href="customer/list"><button class="btn btn-default" role="button">Klienci</button></a>
 
 
 <script src="bootstrap/jquery-3.3.1.min.js"></script>
