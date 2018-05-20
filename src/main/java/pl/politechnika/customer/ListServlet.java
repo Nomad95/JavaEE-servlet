@@ -32,6 +32,13 @@ public class ListServlet extends HttpServlet {
                 customerBean.setPhone(rs.getString("phone"));
                 customerBean.setEmail(rs.getString("email"));
                 customerBean.setCity(rs.getString("city"));
+                customerBean.setDiscountCode(rs.getString("discount_code"));
+                customerBean.setZip(rs.getString("zip"));
+                customerBean.setAddressLine1(rs.getString("addressline1"));
+                customerBean.setAddressLine2(rs.getString("addressline2"));
+                customerBean.setState(rs.getString("state"));
+                customerBean.setFax(rs.getString("fax"));
+                customerBean.setCreditLimit(rs.getString("credit_limit"));
                 customers.add(customerBean);
             }
 

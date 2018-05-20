@@ -21,22 +21,22 @@ public class AddCustomerServlet extends HttpServlet {
 
             CustomerBean newCustomerBean = new CustomerBean();
 
-            newCustomerBean.setDiscountCode((String) request.getAttribute("discountCode"));
-            newCustomerBean.setZip((String) request.getAttribute("zip"));
-            newCustomerBean.setName((String) request.getAttribute("name"));
-            newCustomerBean.setAddressLine1((String) request.getAttribute("addressLine1"));
-            newCustomerBean.setAddressLine2((String) request.getAttribute("addressLine2"));
-            newCustomerBean.setCity((String) request.getAttribute("city"));
-            newCustomerBean.setState((String) request.getAttribute("state"));
-            newCustomerBean.setPhone((String) request.getAttribute("phone"));
-            newCustomerBean.setFax((String) request.getAttribute("fax"));
-            newCustomerBean.setEmail((String) request.getAttribute("email"));
-            newCustomerBean.setCreditLimit((String) request.getAttribute("creditLimit"));
+            newCustomerBean.setDiscountCode(request.getParameter("discountCode"));
+            newCustomerBean.setZip(request.getParameter("zip"));
+            newCustomerBean.setName(request.getParameter("name"));
+            newCustomerBean.setAddressLine1(request.getParameter("addressLine1"));
+            newCustomerBean.setAddressLine2(request.getParameter("addressLine2"));
+            newCustomerBean.setCity(request.getParameter("city"));
+            newCustomerBean.setState(request.getParameter("state"));
+            newCustomerBean.setPhone(request.getParameter("phone"));
+            newCustomerBean.setFax(request.getParameter("fax"));
+            newCustomerBean.setEmail(request.getParameter("email"));
+            newCustomerBean.setCreditLimit(request.getParameter("creditLimit"));
 
-            System.out.println(newCustomerBean);//dlaczego null??
+            System.out.println(newCustomerBean);
             CustomerQueryBuilder.saveCustomer(newCustomerBean);
 
-            response.sendRedirect("/list/customerList.jsp");
+            response.sendRedirect("/customer/list");
 
         } catch (NullPointerException e) {
             e.printStackTrace();
