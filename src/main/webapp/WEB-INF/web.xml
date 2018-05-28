@@ -36,6 +36,10 @@
         <servlet-name>AddCustomerServlet</servlet-name>
         <servlet-class>pl.politechnika.customer.AddCustomerServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>AddCustomerServletHibernate</servlet-name>
+        <servlet-class>pl.politechnika.customer.AddCustomerServletHibernate</servlet-class>
+    </servlet>
 
     <servlet-mapping>
         <servlet-name>CalcServlet</servlet-name>
@@ -68,6 +72,10 @@
     <servlet-mapping>
         <servlet-name>AddCustomerServlet</servlet-name>
         <url-pattern>/customer/add</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AddCustomerServletHibernate</servlet-name>
+        <url-pattern>/customer/addHibernate</url-pattern>
     </servlet-mapping>
 
 </web-app>
