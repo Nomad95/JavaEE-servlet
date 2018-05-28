@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="pl.politechnika.beans.customer.CustomerEntity" table="customers">
+        <id name="id" type="long" column="id">
+            <generator class="sequence">
+                <param name="customers_seq"/>
+            </generator>
+        </id>
+        <property name="name" column="name" type="string" not-null="false" />
+        <property name="phone" column="phone" type="string" not-null="false" />
+        <property name="email" column="email" type="string" not-null="false" />
+        <property name="addressLine1" column="addressline1" type="string" not-null="false" />
+        <property name="addressLine2" column="addressline2" type="string" not-null="false" />
+        <property name="zip" column="zip" type="string" not-null="false" />
+        <property name="discountCode" column="discount_code" type="string" not-null="false" />
+        <property name="fax" column="fax" type="string" not-null="false" />
+        <property name="state" column="state" type="string" not-null="false" />
+        <property name="city" column="city" type="string" not-null="false" />
+        <property name="creditLimit" column="credit_limit" type="string" not-null="false" />
+    </class>
+</hibernate-mapping>

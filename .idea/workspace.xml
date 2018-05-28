@@ -2,12 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ddbf73aa-66bf-4c57-a0ec-40e86ef9bc54" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/WebApp1_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/WebApp1_war_exploded.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/hibernate.cfg.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/pl/config/hibernate/HibernateUtil.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/pl/config/hibernate/mappings/CustomerEntity.hbm.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/pl/politechnika/beans/customer/CustomerEntity.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/pl/politechnika/beans/customer/CustomerManagedBean.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/pl/politechnika/customer/AddCustomerServletHibernate.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/pl/politechnika/repository/customer/CustomerRepository.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/pl/politechnika/repository/customer/impl/CustomerRepositoryImpl.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/list/customerListHibernate.jsp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/list/detailsHibernate.jsp" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/WebApp1.iml" afterPath="$PROJECT_DIR$/WebApp1.iml" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -63,8 +68,8 @@
       <file leaf-file-name="customerListHibernate.jsp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/list/customerListHibernate.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="578">
-              <caret line="57" column="52" lean-forward="true" selection-start-line="57" selection-start-column="52" selection-end-line="57" selection-end-column="52" />
+            <state relative-caret-position="187">
+              <caret line="34" column="44" lean-forward="true" selection-start-line="34" selection-start-column="44" selection-end-line="34" selection-end-column="44" />
               <folding />
             </state>
           </provider>
@@ -871,11 +876,18 @@
       <option name="project" value="LOCAL" />
       <updated>1525775342612</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="hibernate">
+      <created>1527540631288</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1527540631288</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="91901000" />
+    <option name="totallyTimeSpent" value="92215000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1358" y="-8" width="1936" height="1096" extended-state="6" />
@@ -903,7 +915,7 @@
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.43743643" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4771109" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4771109" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.328125" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24322917" sideWeight="0.675" order="0" side_tool="false" content_ui="combo" />
@@ -1395,8 +1407,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/list/customerListHibernate.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="57" column="52" lean-forward="true" selection-start-line="57" selection-start-column="52" selection-end-line="57" selection-end-column="52" />
+        <state relative-caret-position="187">
+          <caret line="34" column="44" lean-forward="true" selection-start-line="34" selection-start-column="44" selection-end-line="34" selection-end-column="44" />
           <folding />
         </state>
       </provider>
